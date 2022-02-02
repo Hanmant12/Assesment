@@ -1,1 +1,2 @@
-here is centrol repository
+hello here is command for git hub
+here is centrol 
