@@ -1,0 +1,22 @@
+i. Lightweight
+The Spring Framework is very lightweight with respect to its size and functionality. It is due to its POJO implementation which doesn’t force to inherit any class or implement any interfaces.
+
+ii. Aspect Oriented Programming(AOP)
+It is an important part of Spring Framework. Aspect Oriented Programming is used for separating cross-cutting concerns (for example logging, security etc.) from the business logic of the application.
+
+iii. Transaction Management
+Transaction Management use for unify several transaction management APIs and is used to coordinate transactions for Java object. Also, not tie to the J2EE environment and use with containerless environments.
+
+iv. Container
+The Spring Framework designs and manages the lifecycle and configurations of application objects.
+
+v. Dependency Injection
+Dependency Injection is a feature of Spring Framework allows you to develop loosely coupled applications. Therefore, the unit testing of these loosely coupled applications becomes easier. This also allows the developer to swap out some of the modules according to its need.
+
+vi. Integration with other frameworks
+A great thing about this framework is that it doesn’t try to solve the problems have already solved. It just tries to integrate them with its framework which provides a solution to greater problems. Example IBATIS, Hibernate, Toplink etc.
+
+Follow this link to know about Spring IoC Containers 
+
+4. Features of Spring 5.0
+Now major enhancements are done since the introduction of Spring Framework by Rod Johnson in 2003. Several versions have been released after its first. As of now the Spring Framework 5.0x versions are released in the market. So, let’s run down to the major upgraded features and enhancements of Spring 5.0 with Java 8 as a minimum requirement across all coding bases with the compatibility of JDK 9 at runtime as well as for build and test suit:
