@@ -1,0 +1,65 @@
+what is @componant and controller?
+
+@Component is a class-level annotation. It is used to denote a class as a Component. We can use @Component across the application to mark the beans as Spring's managed components. A component is responsible for some operations
+he 
+@Controller annotation indicates that a particular class serves the role of a controller. There is no need to extend any controller base class or reference the Servlet API. ... The dispatcher will scan such annotated classes for mapped methods
+The 
+@Required annotation applies to bean property setter methods and it indicates that the affected bean property must be populated in XML configuration file at configuration time. 
+@RequestMapping is the most common and widely used annotation in Spring MVC. It is used to map web requests onto specific handler classes and/or handler methods.
+he
+ @Qualifier annotation in Spring is used to differentiate a bean among the same type of bean objects. If we have more than one bean of the same type and want to wire only one of them then use the @Qualifier annotation along with @Autowired to specify which exact bean will be wired.
+The
+ @RequestBody annotation is applicable to handler methods of Spring controllers. This annotation indicates that Spring should deserialize a request body into an object. This object is passed as a handler method parameter
+Spring RestController annotation is a convenience annotation that is itself annotated with @Controller and @ResponseBody . This annotation is applied to a class to mark it as a request handler. Spring RestController annotation is used to create RESTful web services using Spring MVC.
+he
+ @PathVariable annotation is used to extract the value from the URI. It is most suitable for the RESTful web service where the URL contains some value. Spring MVC allows us to use multiple @PathVariable annotations in the same method. A path variable is a critical part of creating rest resources.
+
+Stereotype Annotations
+Spring Framework provides us with some special annotations. These annotations are used to create Spring beans automatically in the application context. @Component annotation is the main Stereotype Annotation. There are some Stereotype meta-annotations which is derived from @Component those are
+
+@Service
+@Repository
+@Controller
+1: @Service: We specify a class with @Service to indicate that they’re holding the business logic. Besides being used in the service layer, there isn’t any other special use for this annotation. The utility classes can be marked as Service classes.
+
+2: @Repository: We specify a class with @Repository to indicate that they’re dealing with CRUD operations, usually, it’s used with DAO (Data Access Object) or Repository implementations that deal with database tables.
+
+3: @Controller: We specify a class with @Controller to indicate that they’re front controllers and responsible to handle user requests and return the appropriate response. It is mostly used with REST Web Services.
+
+So the stereotype annotations in spring are @Component, @Service, @Repository, and @Controller.
+
+
+
+@Component Annotation
+
+@Component is a class-level annotation. It is used to denote a class as a Component. We can use @Component across the application to mark the beans as Spring’s managed components. A component is responsible for some operations.
+
+Cascade Types in Hibernate
+Cascading is a phenomenon involving one object propagating to other objects via a relationship. It is transitive in nature and the cascade attribute in hibernate defines the relationship between the entities. The cascading types supported by the hibernate framework are as follow:
+
+CascadeType.PERSIST: It means that the save() and persist() operations in the hibernate cascade to the related entities
+CascadeType.MERGE: It means that the related entities are joined when the owning entity is joined
+CascadeType.REMOVE: It means that the related entities are deleted when the owning entity is deleted
+CascadeType.DETACH: It detaches all the related entities if a manual detach occurs
+CascadeType.REFRESH: It works similar to the refresh() operation in the hibernate
+CascadeType.ALL: It is an alternative for performing all the above cascade operations in the hibernate framework
+
+
+ioc:
+
+The IoC container is responsible to instantiate, configure and assemble the objects. The IoC container gets informations from the XML file and works accordingly. The main tasks performed by IoC container are: to instantiate the application class. ... to assemble the dependencies between the objects.
+
+autowiring:
+Autowiring feature of spring framework enables you to inject the object dependency implicitly. It internally uses setter or constructor injection. Autowiring can't be used to inject primitive and string values.
+HQL is suitable for executing Static Queries, where as Criteria is suitable for executing Dynamic Queries. HQL is to perform both select and non-select operations on the data, Criteria is only for selecting the data, we cannot perform non-select operations using criteria.
+
+JPA vs. Hibernate
+What is JPA?
+A JPA (Java Persistence API) is a specification of Java which is used to access, manage, and persist data between Java object and relational database. It is considered as a standard approach for Object Relational Mapping.
+
+JPA can be seen as a bridge between object-oriented domain models and relational database systems. Being a specification, JPA doesn't perform any operation by itself. Thus, it requires implementation. So, ORM tools like Hibernate, TopLink, and iBatis implements JPA specifications for data persistence.
+
+What is Hibernate?
+A Hibernate is a Java framework which is used to store the Java objects in the relational database system. It is an open-source, lightweight, ORM (Object Relational Mapping) tool.
+
+Hibernate is an implementation of JPA. So, it follows the common standards provided by the JPA.
