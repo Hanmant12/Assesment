@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style>
+  form{
+     border:2px solid black;
+      padding:20px;
+       box-shadow: 5px 10px;
+      
+  }
+  body
+  {
+   background-image: url(lapt.JPG);
+  }
+  
+  </style>
+</head>
+<body>
+<br>
+<h1 style="margin-left:450px;text-shadow:2px 2px 4px #000000,0 0 5px #0000FF;color:red;">Registration</h1>
+<br><br>
+<div class="col-md-3"></div>
+
+<div class="col-md-4">
+<form th:action="@{/submitform}" method="post" class="form-group" >
+
+<label style="color:white;">ID</label>
+<input type="text" id="i" name="id" th:utext="${Exa.id}" class="form-control" placeholder="enter id" Autofocus required>
+<label style="color:white;">Name</label>
+<input type="text" id="n" name="name" th:utext="${Exa.name}" class="form-control" placeholder="enter name" required><br>
+<input type="submit" value="submit" class="btn btn-success">
+<input type="reset" value="cancle" class="btn btn-danger">
+
+
+</form>
+<br><br>
+<div style="float:left;"><a href="/home"><button>Back To Home</button></a></div>
+</div>
+</body>
+</html>
