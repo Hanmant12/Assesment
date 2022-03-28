@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<table>
+<tr>
+<th>id</th>
+<th>pname</th>
+<th>cname</th>
+<th>delete</th>
+</tr>
+<tr th:each="u:${m}">
+<td th:utext="${u.id}"></td>
+<td th:utext="${u.pname}"></td>
+<td th:utext="${u.cname}"></td>
+<td><a th:href="@{/del/{id}(id=${u.id})}">del</a>
+</tr>
+</table>
+</body>
+</html>
