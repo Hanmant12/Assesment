@@ -1,0 +1,11 @@
+"use strict";
+exports.__esModule = true;
+var mod_1 = require("./mod");
+var mod_2 = require("./mod");
+var mod_3 = require("./mod");
+var d = new mod_1.demo1();
+d.demo();
+console.log(mod_2.Employee.displayEmployee());
+console.log(mod_3.age);
+var emp = new mod_2.Employee("Dr. Tarkeshwar Barua", 2);
+console.log(emp.displayEmployee());

@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<form th:action="@{/save}" method="post">
+<label>username</label>
+<input type="text" th:field="${mode.username}" name="username"> <br>
+<label>Password</label>
+<input type="password" th:field="${mode.password}"> 
+<input type="submit" value="submit">
+</form>
+<!-- <p th:each="e:${#fields.errors('username')}" th:text="${e}"></p> -->
+</body>
+</html>
