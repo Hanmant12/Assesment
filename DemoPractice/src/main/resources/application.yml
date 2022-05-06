@@ -1,0 +1,32 @@
+server:
+   port: 8085
+---  
+spring:
+   
+   profiles:
+    active: colla
+       
+---   
+spring:
+  profiles: dev 
+  datasource:
+    url: jdbc:mysql://localhost:3306/hanmant
+    password: Hanmant@1997
+    username: root
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update    
+    show-sql: true   
+---
+spring:
+  profiles: colla
+  datasource:
+    url: jdbc:mysql://localhost:3306/hanmant
+    password: Hanmant@1997
+    username: root
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update    
+    show-sql: true 

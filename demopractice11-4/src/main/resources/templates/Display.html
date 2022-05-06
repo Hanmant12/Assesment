@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<table>
+<tr>
+<th>id</th>
+<th>name</th>
+<th>collage</th>
+<th>price</th>
+<th>delete</th>
+<th>Add</th>
+</tr>
+<tr th:each="t:${a}">
+<td th:text="${t.id}"></td>
+<td th:text="${t.name}"></td>
+<td th:text="${t.collage}"></td>
+<td th:text="${t.price}"></td>
+<td><a th:href="@{/del/{id}(id=${t.id})}">delete</a></td>
+<td ><a th:href="@{/form}">add</a></td>
+</tr>
+</table>
+</body>
+</html>
