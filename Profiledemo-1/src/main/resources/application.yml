@@ -1,0 +1,43 @@
+spring:
+  profiles:
+    active:  dev
+    
+server:
+  port: 8086
+---
+spring:
+  profiles: dev
+  datasource:
+    password: Hanmant@1997
+    username: root
+    url: jdbc:mysql://localhost:3306/demo1
+  jpa:
+   hibernate:
+      ddl-auto: update
+   show-sql: true
+   properties:
+     dialect: org.hibernate.dialect.MySQL8Dialect
+     
+---
+spring:
+  profiles: user
+  datasource:
+    password: Hanmant@1997
+    username: root
+    url: jdbc:mysql://localhost:3306/demo11
+  jpa:
+   hibernate:
+      ddl-auto: update
+   show-sql: true
+   properties:
+     dialect: org.hibernate.dialect.MySQL8Dialect     
+  
+    
+    
+    
+   
+            
+
+  
+  
+      
