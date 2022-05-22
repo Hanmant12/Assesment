@@ -1,0 +1,4 @@
+FROM openjdk:11
+EXPOSE 8081
+ADD  target/demo-hanmant.jar demo-hanmant.jar     
+ENTRYPOINT ["java","-jar","/demo-hanmant.jar"]
