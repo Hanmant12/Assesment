@@ -1,0 +1,38 @@
+spring:
+  profiles: dev
+  datasource:
+     url: jdbc:mysql://localhost:3306/new
+     password: Hanmant@1997
+     username: root
+     driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa: 
+    show-sql: true
+    
+    hibernate:
+      ddl-auto: update
+    properties:
+      dialect: org.hibernate.dialect.MYSQL8Dialect
+---      
+spring:
+  profiles: test
+  datasource:
+     url: jdbc:mysql://localhost:3306/demoex
+     password: Hanmant@1997
+     username: root
+     driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa: 
+    show-sql: true
+    
+    hibernate:
+      ddl-auto: update
+    properties:
+      dialect: org.hibernate.dialect.MYSQL8Dialect
+---      
+spring:
+  profiles:
+    active: dev
+ 
+
+server:
+  port: 8081      
+         

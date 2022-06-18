@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+
+<table>
+<tr>
+<th>id</th>
+<th>name</th>
+<th>delete</th>
+</tr>
+<tr th:each="k:${m}">
+<td th:text="${k.id}"></td>
+<td th:text="${k.name}"></td>
+<td><a th:href="@{/del1/{id}(id=${k.id})}">delete</a></td>
+</tr>
+
+</table>
+</body>
+</html>
